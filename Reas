@@ -1,0 +1,16 @@
+interface Message {
+    void greet();
+}
+
+class Hello implements Message {
+    public void greet() {
+        System.out.println("Hello, welcome to Java interfaces!");
+    }
+}
+
+public class Reas {
+    public static void main(String[] args) {
+        Message m = new Hello();
+        m.greet();
+    }
+}
